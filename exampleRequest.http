@@ -1,0 +1,15 @@
+### calculate pricing
+GET http://localhost:8080/pricing?date=13122022
+
+
+### booking
+POST http://localhost:8080/booking/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "customerID": "65124e3bcc47fa16ba8c00c4",
+    "jobCode": "001"
+}
+
+### get booking info to check 
+GET http://localhost:8080/booking?id=65125efd9a07e156acfe438a
